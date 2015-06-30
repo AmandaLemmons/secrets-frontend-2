@@ -6,12 +6,12 @@ require 'http'
 
   def create
 
-    @http_response = Http.post("http://localhost:3000/auth.json", json: {email: params[:email], password: params[:password]})
+    @http_response = Http.post("http://tiy-secrets.herokuapp.com/auth.json", json: {email: params[:email], password: params[:password]})
 
     user = JSON.parse(@http_response)
     session[:name] = user["name"]
     session[:token] = user["token"]
-    @name = session[:name] 
+    @name = session[:name]
 
   end
 
