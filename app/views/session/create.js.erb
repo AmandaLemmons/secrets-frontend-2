@@ -1,0 +1,10 @@
+
+<% if @http_response.code == 201 %>
+  $("#super-wicked-modal").modal("hide");
+    window.location = "/";
+
+  //  partial with the links to sign in
+<% else %>
+  alert("Something went wrong. Check to see if your username and password are correct. ");
+  $("#super-wicked-modal .modal-body").html("<%= j render partial: 'loginform'%> ");
+  <% end %>

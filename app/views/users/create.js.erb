@@ -1,0 +1,12 @@
+
+<% if @response.code == 201 %>
+// do i need to add the ruby logic here???
+  $("#super-wicked-modal").modal("hide");
+  window.location = "/";
+
+
+  //  partial with the links to sign in
+<% else %>
+  $("#super-wicked-modal .modal-body").html("<%= j render partial: 'signupform'%> ");
+  $("super-wicked-modal").modal("show");
+<% end %>
