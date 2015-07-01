@@ -4,8 +4,6 @@
       <% if @name.nil? %>
         <p > Log in to discover and share your secrets. </p> </em>
       <%end%>
-
-
       <% if @name.nil? %>
         <button class="btn btn-primary btn-lg">  <%= link_to "Log in", login_path, remote: true %>   </button>
         <button class="btn btn-primary btn-lg">  <%= link_to "Sign up", signup_path, remote: true %> </button>
@@ -18,13 +16,6 @@
 <div class="show_secret">
   <%= render partial: 'secrets/secrets' %>
 </div>
-
-
-
-<!--will need to take the links away and render the _links  -->
-
-
-
 
 
 

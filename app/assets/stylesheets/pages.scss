@@ -7,22 +7,26 @@
 .jumbotron {
     padding-left: 5rem;
     background-color: #C5EFF7;
-    color: #6C7A89;
+
   h1{
-    font-size: 8em;
+    font-size: 5em;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
+    text-align: left;
+    color: #6C7A89;
     }
     p {
       font-family: 'Playfair Display', serif;
-      font-size: 2em;
+      font-size: 1.25em;
     }
   .btn{
     background-color: #FFB3A7;
-    color: white;
+    color: #C5EFF7;
+    font-family: 'Raleway', sans-serif;
   }
   .btn:hover {
     background-color: #89C4F4;
+    text-decoration: none;
   }
 }
 
@@ -33,13 +37,13 @@ body{
   background-color: #6C7A89;
   padding: 10px;
   p{
-    font-size: 1.75em;
     font-family: 'Playfair Display', serif;
     color: #FFB3A7;
+    font-size: 1em;
   }
   h3{
-    text-align: center;
-    font-size: 2.25em;
+    text-align: left;
+    font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
@@ -53,21 +57,24 @@ body{
     color: #FFB3A7;
     text-transform: uppercase;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 2em;
   }
   .secret{
     border: 1px solid darken(#C5EFF7, 50%);
     background-color: #C5EFF7;
-    height: 25em;
+    height: 15em;
     margin-bottom: 3em;
     margin-left: 0.5em;
-    padding: 2em;
-  }
-  .container {
-    width: 90%;
+    padding: 1em;
+    border-radius: 50px;
   }
 }
 
 .form {
+  background-color: #C5EFF7;
   color: #6C7A89;
+  font-family: 'Raleway', sans-serif;
+}
+.modal-content{
+  background-color: #C5EFF7;
 }
