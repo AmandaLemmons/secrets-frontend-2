@@ -6,67 +6,60 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .jumbotron {
     padding-left: 5rem;
-    background-color: #C5EFF7;
+    background-color: #FF9C5F;
 
   h1{
-    font-size: 5em;
+    font-size: 5.5em;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     text-align: left;
-    color: #6C7A89;
-    }
+    color: #5FA292;
+  }
     p {
       font-family: 'Playfair Display', serif;
       font-size: 1.25em;
     }
   .btn{
-    background-color: #FFB3A7;
-    color: #C5EFF7;
+    background-color: #558188;
     font-family: 'Raleway', sans-serif;
   }
   .btn:hover {
-    background-color: #89C4F4;
+    background-color: #FF8B6C;
+  }
+  .btn a {
+    color: lighten(#FF9C5F, 30%);
     text-decoration: none;
   }
 }
 
 
 body{
-  background: #6C7A89;
   color: #C5EFF7;
-  background-color: #6C7A89;
+  background-color: #253939;
   padding: 10px;
   p{
     font-family: 'Playfair Display', serif;
-    color: #FFB3A7;
-    font-size: 1em;
+    color: lighten(#FF9C5F, 30%);    font-size: 1.5em;
   }
   h3{
     text-align: left;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: bolder;
-    border-bottom: 1px solid darken(#C5EFF7, 40%);
-    color: darken(#C5EFF7, 40%);
+    border-bottom: 1px solid darken(#ff9c5f, 20%);
+    color: #ff9c5f;
+  }
 
-  }
-  h1 {
-    font-family: 'Raleway', sans-serif;
-    text-transform: uppercase;
-    color: #FFB3A7;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 2em;
-  }
   .secret{
-    border: 1px solid darken(#C5EFF7, 50%);
-    background-color: #C5EFF7;
+    border: 2px solid darken(#ff9c5f, 20%);
+    background-color: #558188;
     height: 15em;
     margin-bottom: 3em;
     margin-left: 0.5em;
     padding: 1em;
-    border-radius: 50px;
+    // border-radius: 50px;
   }
 }
 
@@ -77,4 +70,12 @@ body{
 }
 .modal-content{
   background-color: #C5EFF7;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  color: lighten(#FF9C5F, 30%);     text-transform: capitalize;
+  text-align: center;
+  font-size: 2.5em;
 }
